@@ -166,7 +166,8 @@ body {
   color: #ef233c;
 }
 
-.content-1 .col-md-12 .title-border {
+.content-1 .col-md-12 .title-border,
+.content-3 .col-md-12 .title-border {
   content: "";
   width: 30%;
   height: 2px;
