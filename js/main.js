@@ -120,11 +120,86 @@ $(document).ready(function () {
             'height':'100px',
             'bottom':'40%'
         })
-    })
+    });
+
 
     $('.content-4 .nav-tabs:nth-child(1)').css({
         'background-color' : "#ffffff",
         'border-top' : '3px solid #e30022'
+    });
+
+    $('.content-4 .nav-tabs:nth-child(1)').on('focusin',function(){
+        $(this).css({
+            'background-color': '#ffffff',
+            'border-top': '3px solid #e30022'
+        })
+    });
+
+    $('.content-4 .nav-tabs:nth-child(1)').on('focusout',function(){
+        $(this).css({
+            'background-color':'#edf2f4',
+            'border-top': '0px'
+        })
     })
 
+    $('.content-4 .nav-tabs:nth-child(2)').on('focusin',function(){
+        $('content-4 .nav-tabs:nth-child(1').css({
+            'background-color':'#edf2f4',
+            'border-top':'0px'
+        })
+
+        $(this).css({
+            'background-color': '#ffffff',
+            'border-top': '3px solid #e30022'
+        })
+    });
+
+    $('.content-4 .nav-tabs:nth-child(2)').on('focusout',function(){
+        $(this).css({
+            'background-color':'#edf2f4',
+            'border-top': '0px'
+        })
+    })
+
+    $('.content-4 .nav-tabs:nth-child(3)').on('focusin',function(){
+        $(this).css({
+            'background-color': '#ffffff',
+            'border-top': '3px solid #e30022'
+        })
+    });
+
+    $('.content-4 .nav-tabs:nth-child(3)').on('focusout',function(){
+        $(this).css({
+            'background-color':'#edf2f4',
+            'border-top': '0px'
+        })
+    })
+
+    $('.content-4 .nav-tabs:nth-child(4)').on('focusin',function(){
+        $(this).css({
+            'background-color': '#ffffff',
+            'border-top': '3px solid #e30022'
+        })
+    });
+
+    $('.content-4 .nav-tabs:nth-child(4)').on('focusout',function(){
+        $(this).css({
+            'background-color':'#edf2f4',
+            'border-top': '0px'
+        })
+    })
+
+
+    $(window).scroll(function(){
+        if($(document).scrollTop()>450) {
+            $('nav').addClass('fixed-top').addClass('sticky');
+        }else {
+            $('nav').removeClass('fixed-top').removeClass('sticky');
+        }
+    })
+
+
+
+
 })
+

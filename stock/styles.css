@@ -8,15 +8,17 @@ body {
     height: 100%;
     width: 100%;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 * {
     box-sizing: border-box;
 }
 
-.goup {
-    display:flex; 
+.group {
+    display: flex;
     justify-content: flex-end;
 }
 
@@ -48,12 +50,12 @@ html {
 }
 
 .navbar-brand span {
-    
+
     transition: all .5s ease;
 }
 
 .navbar-brand span:hover {
-    color: red; 
+    color: red;
 }
 
 /* NAVBAR DESIGN */
@@ -79,6 +81,7 @@ html {
     background-color: #ef233c;
     color: white;
 }
+
 
 .right-a:before {
     content: "";
@@ -140,6 +143,20 @@ html {
     color: #f6f8ff;
 }
 
+@media screen and (max-width:380px) {
+    .title-text {
+        height: 5vh;
+        font-size: 0.8em;
+        color: #f6f8ff;
+        margin-left: 60px;
+    }
+
+    .btn-sub2 {
+        display: none;
+    }
+}
+
+
 /* BTN DESIGN */
 .btn-sub1 {
     font-family: "Roboto", sans-serif;
@@ -169,6 +186,7 @@ html {
     border: 1px solid #edf2f4;
     padding-right: 30px;
 }
+
 .fa-angle-right,
 .fa-angle-double-right {
     transform: rotate(0);
@@ -181,6 +199,7 @@ html {
     color: #ef233c;
     border: 1px solid #ef233c;
 }
+
 /* END OF BUTTON DESIGN */
 
 
@@ -337,7 +356,7 @@ html {
     transition: all 0.5s ease;
 }
 
-.content-3  .col-md-3 {
+.content-3 .col-md-3 {
     padding: 0px;
 }
 
@@ -410,7 +429,7 @@ html {
 }
 
 .content-5 .member-1 .desc .info {
-    padding: 8%; 
+    padding: 8%;
     font-size: 14px;
 }
 
@@ -420,13 +439,13 @@ html {
 
 .content-5 .social-icon {
     background-color: #edf2f4;
-    padding: 4%; 
+    padding: 4%;
 }
 
 .content-5 .social-icon span {
     border: 1px solid rgba(123, 123, 123, 0.2);
-    padding: 4px 8px; 
-    border-radius: 40px; 
+    padding: 4px 8px;
+    border-radius: 40px;
     cursor: pointer;
     transition: all .5s ease;
 }
@@ -434,7 +453,7 @@ html {
 /* CONTENT 6 */
 
 .content-6 {
-    margin-bottom: 5%; 
+    margin-bottom: 5%;
 }
 
 .content-6 .contact span {
@@ -443,7 +462,7 @@ html {
 
 .content-6 .btn-submit {
     background-color: #ef233c;
-    color: white; 
+    color: white;
     cursor: pointer;
 }
 

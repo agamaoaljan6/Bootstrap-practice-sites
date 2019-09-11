@@ -65,3 +65,14 @@
     }
 }
 
+
+.content-5 .social-icon span:hover {
+    background-color: #ef233c;
+    color: white;
+}
+
+.sticky{
+    background-color: #60BAAE;
+    padding: 0% 4%;
+    transition: all .4s ease;
+}
