@@ -1,0 +1,46 @@
+.content-3 .basic a:hover, 
+.enterprise a:hover {
+    background-color: #e30022;
+    color: white;
+}
+
+@media only screen and (min-width:1024px) {
+    .basic .basic-border, 
+    .enterprise .basic-border {
+        position: absolute;
+        background-color: #e30022;
+        transition: all .8s ease;
+    }
+    .content-3 .basic .basic-border:nth-child(1),
+    .content-3 .enterprise .basic-border:nth-child(1) {
+        top: 0%; 
+        left: 0%; 
+        width: 30px; 
+        height: 0.8px; 
+    }
+    .content-3 .basic .basic-border:nth-child(2),
+    .content-3 .enterprise .basic-border:nth-child(2) {
+        top: 0%; 
+        left: 0%; 
+        width: 1px; 
+        height: 30px; 
+    }
+    .content-3 .basic .basic-border:nth-child(3),
+    .content-3 .enterprise .basic-border:nth-child(3) {
+        bottom: 0%; 
+        right: 0%; 
+        width: 0.8px; 
+        height: 30px;
+    }
+    .content-3 .basic .basic-border:nth-child(4),
+    .content-3 .enterprise .basic-border:nth-child(4) {
+        bottom: 0%; 
+        right: 0%; 
+        width: 30px; 
+        height: 1px;
+    }
+
+    .enterprise .basic-border:nth-child(2){
+        width: 0.8px;
+    }
+}
