@@ -43,4 +43,25 @@
     .enterprise .basic-border:nth-child(2){
         width: 0.8px;
     }
+
+    .pro .pro-span {
+        position: absolute;
+        background-color: #e30022;
+        transition: all 0.8s ease;
+    }
+
+    .pro .pro-span:nth-child(1) {
+        bottom: 40%;
+        right: 0%;
+        width: 1px; 
+        height: 100px;
+    }
+
+    .pro .pro-span:nth-child(2) {
+        bottom: 40%;
+        left: 0%; 
+        width: 1px; 
+        height: 100px;
+    }
 }
+

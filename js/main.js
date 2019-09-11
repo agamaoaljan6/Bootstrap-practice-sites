@@ -59,8 +59,72 @@ $(document).ready(function () {
         }else if(y > scrollt) {
             $('.prog-1, .prog-2, .prog-3')
         }
+    })
+
+    let basic_span = '.basic .basic-border:nth-child';
+
+    $('.basic a').hover(function() {
+        $(basic_span +'(1)').css('width', '100%');
+        $(basic_span +'(2)').css('height', '100%');
+        $(basic_span +'(3)').css('height', '100%');
+        $(basic_span +'(4)').css('width', '100%');
+        $('.basic hr').css('background-color','red');
+    },
+    
+    function() {
+        $(basic_span +'(1)').css('width', '30px');
+        $(basic_span +'(2)').css('height', '30px');
+        $(basic_span +'(3)').css('height', '30px');
+        $(basic_span +'(4)').css('width', '30px');
+        $('.basic hr').css('background-color','inherit');
+    })
+
+    let enterprise_span = '.enterprise .basic-border:nth-child';
+
+    $('.enterprise a').hover(function() {
+        $(enterprise_span +'(1)').css('width', '100%');
+        $(enterprise_span +'(2)').css('height', '100%');
+        $(enterprise_span +'(3)').css('height', '100%');
+        $(enterprise_span +'(4)').css('width', '100%');
+        $('.enterprise hr').css('background-color','red');
+    },
+    
+    function() {
+        $(enterprise_span +'(1)').css('width', '30px');
+        $(enterprise_span +'(2)').css('height', '30px');
+        $(enterprise_span +'(3)').css('height', '30px');
+        $(enterprise_span +'(4)').css('width', '30px');
+        $('.enterprise hr').css('background-color','inherit');
+       
+    })
 
 
+    let pro_span = '.pro .pro-span:nth-child';
+    $('.pro #pro-button').hover(
+        function() {
+        $(pro_span +'(1)').css({
+            'height':'100%',
+            'bottom':'0%'
+        });
+        $(pro_span +'(2)').css({
+            'height':'100%',
+            'bottom':'0%'
+        })
+    },
+    function() {
+        $(pro_span +'(1)').css({
+            'height':'100px',
+            'bottom':'40%',
+        });
+        $(pro_span +'(2)').css({
+            'height':'100px',
+            'bottom':'40%'
+        })
+    })
+
+    $('.content-4 .nav-tabs:nth-child(1)').css({
+        'background-color' : "#ffffff",
+        'border-top' : '3px solid #e30022'
     })
 
 })
