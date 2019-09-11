@@ -43,8 +43,24 @@ $(document).ready(function () {
             "color":" #ef233c"
         });
     }
-    
-    
-    
     )
+
+    const x = 854;
+    const y = 672;
+
+    $(window).on('scroll', function() {
+        let scrollh = $(document).height();
+        let scrollt = $(document).scrollTop();
+
+        if(x < scrollt){
+            $('.prog-1').css('width', '90%');
+            $('.prog-2').css('width', '94%');
+            $('.prog-3').css('width', '85%');
+        }else if(y > scrollt) {
+            $('.prog-1, .prog-2, .prog-3')
+        }
+
+
+    })
+
 })
