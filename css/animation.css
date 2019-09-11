@@ -16,7 +16,7 @@
         top: 0%; 
         left: 0%; 
         width: 30px; 
-        height: 0.8px; 
+        height: 1px; 
     }
     .content-3 .basic .basic-border:nth-child(2),
     .content-3 .enterprise .basic-border:nth-child(2) {
