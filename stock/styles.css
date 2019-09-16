@@ -3,86 +3,87 @@
 @import url("https://fonts.googleapis.com/css?family=Manjari&display=swap");
 
 body {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto';
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .group {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .site-wrapper {
-    width: 100%;
-    height: 100%;
-    background-image: url(/homepagebg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+  width: 100%;
+  height: 100%;
+  background-image: url(/homepagebg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 /* NAVBAR */
 .navbar-nav li a {
-    font-size: 1.2em;
-    margin: 0px 10px;
-    text-align: center;
+  font-size: 1.2em;
+  margin: 0px 10px;
+  text-align: center;
 }
 
 .navbar-nav li a i {
-    color: white;
-    transition: all 0.5s ease;
-    font-size: 25px;
+  color: white;
+  transition: all 0.5s ease;
+  font-size: 25px;
 }
 
 .navbar-nav li a i:hover {
-    color: red;
-    transition: all 0.5s ease;
+  color: red;
+  transition: all 0.5s ease;
 }
 
 .navbar-brand span {
-
-    transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .navbar-brand span:hover {
-    color: red;
+  color: red;
 }
 
 /* NAVBAR DESIGN */
 .right-ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .right-ul li a {
-    text-decoration: none;
-    color: #272727;
-    font-size: 22px;
-    padding: 5px 10px;
-    margin: 0px 10px;
-    position: relative;
-    transition: all 0.5s;
+  text-decoration: none;
+  color: #272727;
+  font-size: 22px;
+  padding: 5px 10px;
+  margin: 0px 10px;
+  position: relative;
+  transition: all 0.5s;
+  border-radius: 50px;
 }
 
 .right-a:hover {
-    background-color: #ef233c;
-    color: white;
+  background-color: #ef233c;
+  color: white;
 }
 
-
+/* 
 .right-a:before {
     content: "";
     position: absolute;
@@ -92,7 +93,7 @@ html {
     height: 12px;
     border: 3px solid #ef233c;
     border-width: 0 0 3px 3px;
-    /* border width takes 4 values TRouBLe */
+    
     opacity: 0;
     transition: all 0.3s;
 }
@@ -112,7 +113,7 @@ html {
     height: 12px;
     border: 3px solid #ef233c;
     border-width: 3px 3px 0 0;
-    /* border width takes 4 values TRouBLe */
+    
     opacity: 0;
     transition: all 0.3s;
 }
@@ -121,397 +122,391 @@ html {
     opacity: 1;
     top: -8px;
     right: -8px;
-}
+} */
 
 /* END OF NAVBAR DESIGN */
 .site-title {
-    text-align: center;
-    margin-top: 5%;
-    height: 82vh;
+  text-align: center;
+  margin-top: 5%;
+  height: 82vh;
 }
 
 .site-title h2 {
-    font-size: 3em;
-    margin-top: 120px;
-    margin-bottom: 30px;
+  font-size: 3em;
+  margin-top: 120px;
+  margin-bottom: 30px;
 }
 
 .title-text {
-    width: 50vw;
+  width: 50vw;
+  height: 5vh;
+  font-size: 1.3em;
+  color: white;
+  text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+}
+
+@media screen and (max-width: 380px) {
+  .title-text {
     height: 5vh;
     font-size: 0.8em;
     color: #f6f8ff;
+    margin-left: 60px;
+  }
+
+  .btn-sub2 {
+    display: none;
+  }
 }
-
-@media screen and (max-width:380px) {
-    .title-text {
-        height: 5vh;
-        font-size: 0.8em;
-        color: #f6f8ff;
-        margin-left: 60px;
-    }
-
-    .btn-sub2 {
-        display: none;
-    }
-}
-
 
 /* BTN DESIGN */
 .btn-sub1 {
-    font-family: "Roboto", sans-serif;
-    border: 1px solid #ef233c;
-    background-color: #edf2f4;
-    color: #ef233c;
-    border-radius: 3px;
-    padding: 0.7em 1em;
-    cursor: pointer;
-    transition: all 0.5s ease;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #ef233c;
+  background-color: #edf2f4;
+  color: #ef233c;
+  border-radius: 50px;
+  padding: 0.7em 1em;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .btn-sub2 {
-    font-family: "Roboto", sans-serif;
-    padding: 0.7em 1em;
-    background-color: #ef233c;
-    color: #edf2f4;
-    border: 1px solid #edf2f4;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: all 0.5s ease;
+  font-family: "Roboto", sans-serif;
+  padding: 0.7em 1em;
+  background-color: #ef233c;
+  color: #edf2f4;
+  border: 1px solid #edf2f4;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .btn-sub1:hover {
-    background-color: #ef233c;
-    color: #edf2f4;
-    border: 1px solid #edf2f4;
-    padding-right: 30px;
+  background-color: #ef233c;
+  color: #edf2f4;
+  border: 1px solid #edf2f4;
 }
 
-.fa-angle-right,
+/* .fa-angle-right,
 .fa-angle-double-right {
     transform: rotate(0);
     transition: all .2s ease;
-}
-
+} */
 
 .btn-sub2:hover {
-    background-color: #edf2f4;
-    color: #ef233c;
-    border: 1px solid #ef233c;
+  background-color: #edf2f4;
+  color: #ef233c;
+  border: 1px solid #ef233c;
 }
 
 /* END OF BUTTON DESIGN */
 
-
 /* Content-1 */
 
 .content-1-text {
-    text-align: justify;
+  /* text-align: center; */
 }
 
 .content-1 .col-md-12 h6 {
-    font-size: 20px;
-    color: #ef233c;
+  font-size: 20px;
+  color: #ef233c;
 }
 
 .content-1 .col-md-12 .title-border,
 .content-3 .col-md-12 .title-border {
-    content: "";
-    width: 30%;
-    height: 2px;
-    display: block;
-    background-color: #ef233c;
-    border-radius: 50%;
-    margin: 1%;
-    margin-left: 35%;
+  content: "";
+  width: 30%;
+  height: 2px;
+  display: block;
+  background-color: #ef233c;
+  border-radius: 50%;
+  margin: 1%;
+  margin-left: 35%;
 }
 
 .content-1 .col-md-12 p {
-    font-size: 15px;
-    color: #3f494c;
+  font-size: 15px;
+  color: #3f494c;
 }
 
 .content-1 .circle {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    margin: 0 auto;
-    background-color: #f7fff7;
-    border: 1px solid #3f494c;
-    color: #ef233c;
-    transition: all 0.2s ease;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: #f7fff7;
+  border: 1px solid #3f494c;
+  color: #ef233c;
+  transition: all 0.2s ease;
 }
 
 .content-1 .description a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .content-1 .description p {
-    font-size: 16px;
-    text-align: justify;
+  font-size: 16px;
+  /* text-align: center; */
 }
 
 /* CONTENT 2 */
 
-.content-2-text {
-    text-align: justify;
-}
+/* .content-2-text {
+  text-align: center;
+} */
 
 .content-2 .row .col-1 {
-    background: url(/content2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+  background: url(/content2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .content-2 .col-md-6 p {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .content-2 .progress-bars {
-    margin-bottom: 8vh;
+  margin-bottom: 8vh;
 }
 
 .progress .prog-1,
 .prog-2,
 .prog-3 {
-    width: 0%;
-    transition: all 2s ease;
+  width: 0%;
+  transition: all 2s ease;
 }
 
 /* CONTENT 3 */
 .content-3 {
-    width: 100vw;
-    background-color: #efefff;
+  width: 100vw;
+  background-color: #efefff;
 }
 
 .content-3 .row {
-    padding-bottom: 4%;
+  padding-bottom: 4%;
 }
 
 .content-3 .col-md-12 p {
-    font-size: 23px;
-    margin-top: 1em;
-    color: #ef233c;
+  font-size: 23px;
+  margin-top: 1em;
+  color: #ef233c;
 }
 
 .content-3 .col-md-12 h3 {
-    margin-bottom: 2%;
+  margin-bottom: 2%;
 }
 
 .content-3 .pro {
-    border: 1px solid rgba(23, 23, 38, 0.2);
-    border-radius: 3px;
-    background-color: #fffbfe;
+  border: 1px solid rgba(23, 23, 38, 0.2);
+  border-radius: 3px;
+  background-color: #fffbfe;
 }
 
 .content-3 .pro p {
-    border: 1px solid rgba(23, 23, 38, 0.2);
-    color: white;
-    background-color: #e30022;
-    border-top: none;
-    display: inline-block;
-    padding: 3% 35%;
-    margin-bottom: 10%;
+  border: 1px solid rgba(23, 23, 38, 0.2);
+  color: white;
+  background-color: #e30022;
+  border-top: none;
+  display: inline-block;
+  padding: 3% 35%;
+  margin-bottom: 10%;
 }
 
 .content-3 .pro .price .dollar {
-    font-size: 19px;
-    margin-top: 20px;
-    padding-left: 10px;
-    display: inline-block;
-    position: relative;
-    top: -20px;
+  font-size: 19px;
+  margin-top: 20px;
+  padding-left: 10px;
+  display: inline-block;
+  position: relative;
+  top: -20px;
 }
 
 .content-3 .pro h6 {
-    padding: 3%;
-    font-size: 13px;
+  padding: 3%;
+  font-size: 13px;
 }
 
 .content-3 .pro a {
-    display: inline-block;
-    padding: 8px 40px;
-    margin: 10% 10%;
-    background-color: #e30022;
-    color: white;
-    text-decoration: none;
-    border-radius: 3px;
+  display: inline-block;
+  padding: 8px 40px;
+  margin: 10% 10%;
+  background-color: #e30022;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
 }
 
 .content-3 .enterprise p {
-    padding: 3% 28%;
+  padding: 3% 28%;
 }
 
 .content-3 .basic a,
 .content-3 .enterprise a {
-    font-family: "Roboto", sans-serif;
-    border: 1px solid #ef233c;
-    background-color: white;
-    color: #3f494c;
-    border-radius: 3px;
-    padding: 0.7em 1em;
-    cursor: pointer;
-    transition: all 0.5s ease;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #ef233c;
+  background-color: white;
+  color: #3f494c;
+  border-radius: 3px;
+  padding: 0.7em 1em;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .content-3 .col-md-3 {
-    padding: 0px;
+  padding: 0px;
 }
 
 /* CONTENT 4 */
 
 .content-4 .nav {
-    justify-content: center;
-    margin: 5%;
+  justify-content: center;
+  margin: 5%;
 }
 
 .content-4 .nav-tabs {
-    margin: 2px;
-    border: 1px solid rgba(232, 232, 232);
-    border-bottom: 0px;
-    text-align: center;
-    cursor: pointer;
-    background-color: #edf2f4;
-
+  margin: 2px;
+  border: 1px solid rgba(232, 232, 232);
+  border-bottom: 0px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #edf2f4;
 }
 
-
 .content-4 .tab-item {
-    color: #3f494c;
-    text-decoration: none;
+  color: #3f494c;
+  text-decoration: none;
 }
 
 .content-4 .tab-item i {
-    display: block;
-    font-size: 45px;
-    padding: 0.4em 1.7em 0em 1.7em;
+  display: block;
+  font-size: 45px;
+  padding: 0.4em 1.7em 0em 1.7em;
 }
 
 .content-4 .tab-item span {
-    display: inline-block;
-    padding-bottom: 1em;
-    width: 100%;
+  display: inline-block;
+  padding-bottom: 1em;
+  width: 100%;
 }
 
 .content-4 .tab-item.active {
-    color: red;
+  color: red;
 }
 
 /* CONTENT 5 */
 
 .content-5 .row {
-    margin-top: 8%;
+  margin-top: 8%;
 }
 
 .content-5 .member-1 .avatar {
-    margin: 20px 0px;
+  margin: 20px 0px;
 }
 
 .content-5 .circle {
-    border-radius: 100px;
-    width: 35%;
-    padding-top: 35px;
-    position: relative;
-    z-index: 4;
+  border-radius: 100px;
+  width: 35%;
+  padding-top: 35px;
+  position: relative;
+  z-index: 4;
 }
 
 .content-5 .avatar span::after {
-    content: '';
-    width: 90%;
-    height: 100px;
-    background-color: #edf2f4;
-    position: absolute;
-    display: block;
-    top: 3px;
-    z-index: 0;
+  content: "";
+  width: 90%;
+  height: 100px;
+  background-color: #edf2f4;
+  position: absolute;
+  display: block;
+  top: 3px;
+  z-index: 0;
 }
 
 .content-5 .member-1 .desc .info {
-    padding: 8%;
-    font-size: 14px;
+  padding: 8%;
+  font-size: 14px;
 }
 
 .content-5 .info {
-    text-align: justify;
+  text-align: justify;
 }
 
 .content-5 .social-icon {
-    background-color: #edf2f4;
-    padding: 4%;
+  background-color: #edf2f4;
+  padding: 4%;
 }
 
 .content-5 .social-icon span {
-    border: 1px solid rgba(123, 123, 123, 0.2);
-    padding: 4px 8px;
-    border-radius: 40px;
-    cursor: pointer;
-    transition: all .5s ease;
+  border: 1px solid rgba(123, 123, 123, 0.2);
+  padding: 4px 8px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 /* CONTENT 6 */
 
 .content-6 {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
 .content-6 .contact span {
-    color: #ef233c;
+  color: #ef233c;
 }
 
 .content-6 .btn-submit {
-    background-color: #ef233c;
-    color: white;
-    cursor: pointer;
+  background-color: #ef233c;
+  color: white;
+  cursor: pointer;
 }
 
 /* Content-7 */
 
-
 footer .container {
-    display: flex;
-    text-align: center;
+  display: flex;
+  text-align: center;
 }
 
 footer .icon {
-    width: 50px;
-    height: 50px;
-    background-color: #f1f1f1;
-    border-radius: 30%;
-    margin: 10px;
-    color: #ef233c;
-    box-shadow: 0 5px 15px -5px #00000070;
-    position: relative;
-    overflow: hidden;
+  width: 50px;
+  height: 50px;
+  background-color: #f1f1f1;
+  border-radius: 30%;
+  margin: 10px;
+  color: #ef233c;
+  box-shadow: 0 5px 15px -5px #00000070;
+  position: relative;
+  overflow: hidden;
 }
 
 footer .icon i {
-    line-height: 50px;
-    font-size: 23px;
-    transition: all .2s;
+  line-height: 50px;
+  font-size: 23px;
+  transition: all 0.2s;
 }
 
 footer .icon:hover i {
-    transform: scale(1.3);
-    color: #f1f1f1;
-    transition: all .5s ease;
+  transform: scale(1.3);
+  color: #f1f1f1;
+  transition: all 0.5s ease;
 }
 
 footer .icon:before {
-    content: '';
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    background-color: #ef233c;
-    left: -110%;
-    top: 90%;
-    transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background-color: #ef233c;
+  left: -110%;
+  top: 90%;
+  transform: rotate(45deg);
 }
 
 footer .icon:hover:before {
-    animation: animation 0.7s 1 forwards;
-    /* animation takes 4 arguments 
+  animation: animation 0.7s 1 forwards;
+  /* animation takes 4 arguments 
     first: name of keyframe 
     second: duration of the animation
     third: iteration count
@@ -519,20 +514,24 @@ footer .icon:hover:before {
      */
 }
 
-
 @keyframes animation {
-    0% {
-        left: -110%;
-        top: 90%;
-    }
+  0% {
+    left: -110%;
+    top: 90%;
+  }
 
-    50% {
-        left: 15%;
-        top: -30%;
-    }
+  50% {
+    left: 15%;
+    top: -30%;
+  }
 
-    100% {
-        left: -10%;
-        top: -10%;
-    }
+  100% {
+    left: -10%;
+    top: -10%;
+  }
+}
+
+
+.tab-parag {
+    line-height: 31px;
 }
