@@ -204,7 +204,7 @@ html {
 /* Content-1 */
 
 .content-1-text {
-  /* text-align: center; */
+  text-align: start;
 }
 
 .content-1 .col-md-12 h6 {
@@ -246,14 +246,14 @@ html {
 
 .content-1 .description p {
   font-size: 16px;
-  /* text-align: center; */
+  text-align: start;
 }
 
 /* CONTENT 2 */
 
-/* .content-2-text {
-  text-align: center;
-} */
+.content-2-text {
+  text-align: start;
+}
 
 .content-2 .row .col-1 {
   background: url(/content2.jpg);
@@ -430,7 +430,7 @@ html {
 }
 
 .content-5 .info {
-  text-align: justify;
+  text-align: start;
 }
 
 .content-5 .social-icon {
